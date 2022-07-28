@@ -1,0 +1,193 @@
+*{
+margin:0;
+padding:0;
+}
+
+
+body{
+    background-image: url(cadenabloque.png);
+    background-size: cover;
+    background-position: center;
+}
+
+h1{ font-size: 3em;}
+h2{ font-size: 2em;}
+h3{ font-size: 1em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+section[id]{scroll-margin-top: 197px;}
+
+.iconosubir svg{
+    height: 30px;
+    width: 30px;
+}
+
+header{
+    position: fixed;
+    z-index: 3;
+    left:0;
+    top:0;
+    width: 100%;
+}
+
+main{    
+    margin-top: 9rem;  
+    opacity: 0.8;
+ }
+
+aside{
+    opacity: 0.9;
+    background-color:black ;
+    margin-top:9rem;
+    height: 1400px;}
+
+footer{opacity:0.6}
+
+.tablaprincipal {
+    background-color: black;
+    opacity: 0.85;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menunavegador {
+    background-color: rgb(61, 59, 59);
+    opacity:0.85;
+    display:inline-block;
+    width: 100%;
+    height: 70px;
+}
+
+
+.menunavegador nav ul li{
+    list-style: none;
+    margin-left: 2px; 
+    padding: 15px; 
+    float:left; 
+    position:relative;
+}
+
+.menunavegador nav ul li a{
+    text-decoration: none;
+    color:rgb(177, 176, 179);
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:larger;
+}
+
+.menunavegador nav ul li a::before{
+    display:block;
+    content:"";
+    width: 0%;
+    background: rgb(179, 153, 5);
+    height: 7px;
+    top:0;
+    position:absolute;
+    transition: width 0.5s;
+}
+
+.menunavegador nav ul li a:hover::before{
+    width:100%}
+
+.Botonprincipal{
+    display: flex;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(78, 76, 76);
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5 ease all;
+    border-radius: 5px;
+    position:relative;
+    overflow: hidden;
+}
+
+
+.Botonprincipal span {
+    position: absolute;
+    left:30%;    
+    transition: 00.7s ease-in-out all;
+}
+
+.Botonprincipal:hover span{
+    left:20px;
+}
+
+.Botonprincipal .iconobloques {
+    display:flex;
+    align-items: center;
+    position:absolute;
+    z-index:2;
+    left: -50px;
+    transition: 0.7s ease-in-out all;
+    opacity: 0;    
+  }
+
+.Botonprincipal svg{
+    width: 40px;
+    height: 40px;
+}
+
+.Botonprincipal:hover .iconobloques {
+left:200px;
+opacity: 1; 
+}
+
+.Botonprincipal:hover {background-color:rgb(179, 153, 5) ;}
+
+.Inicial{
+    background-color: rgb(0, 0, 0); 
+    margin-left:0px;
+    }
+
+.Inicialuno{
+    background-color: dimgray;
+    padding: 50px 12px;   
+}
+
+.Inicialdos{
+    background-color: rgb(0, 0, 0);
+    padding: 50px 12px;
+}
+.Inicialtres{
+    background-color: dimgray;
+    padding: 50px 12px;
+}
+
+.Principalescriptos {background-color: rgb(255, 255, 255);}
+
+.Pantallaprincipal{background-color: black;}
+.imagenmundo{align-content: center;}
+
+
+#menu ul{list-style: none;}
+
+.iconocalculadora{
+    position: relative;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgb(0, 0, 0);
+    color:white;    
+}
+
+.iconocalculadora svg{    
+    width: 30px;
+    height: 30px;  
+}
+
+.carrusel2{width: 240px;
+    height:240px;
+}

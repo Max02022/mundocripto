@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleregistros.css">
+    <script type="text/javascript">
+      function ingresousuario(){     
+          alert("RECUERDA COMPLETAR TODOS LOS CAMPOS OBLIGATORIOS, DE SER ASI !!!FELICIDADES!!! YA ESTAS REGISTRADO CORRECTAMENTE");
+      }
+  </script>
+    <title>REGISTRO USUARIOS</title>
+</head>
+
+<header>
+  <div class="Encabezado">
+   <h1 align="center" style="color:rgb(161, 161, 158)"> <font face="Arial, Verdana" size="6"><b>REGISTROS USUARIOS</b></h1><br>
+  </div>
+</header>
+
+<body>
+  <main>
+    <div class="Tablaregistro">
+
+        <section id="registro">
+        
+           
+            <table align="center" border="1">
+              <caption><h2 style="color:rgb(179, 153, 5)"> <font face="Arial, Verdana" size="5"><b>CREAR NUEVO USUARIO</b></h2><br></caption>
+            <tr>
+        <td>
+        <form align="center"><br><h3><font face="Arial, Verdana" size="3">
+            Nombre:<input type="Text" name="Nombre" required><br>
+            <br>
+            Apellido: <input type="Text" name="Apellido" required><br>
+            <br>
+            Contraseña: <input type="password" name="pass" required><br>
+            <br>
+          
+            TIENE CONOCIMIENTOS SOBRE CRIPTOMONEDAS:<br>
+            <br>
+            <font face="Arial" size="3">Seleccione una opción:</font>
+              <select id="OPCIONES" name="OPCIONES">
+              <option value="btc">SI</option>
+              <option value="eth">NO</option>
+              <option value="usdt">UN POCO</option>
+              <option value="ada">NADA</option>
+            </select><br>
+            <br>
+        
+            SEXO:<br>
+            <br>
+            Masculino: <input type="radio" name="masc"><br>
+            Femenino: <input type="radio" name="masc"><br>
+            Otro: <input type="radio" name="masc"><br>
+            <br>
+
+           <input class="botonenviar" type="submit" value="Enviar" onclick="ingresousuario()"></input>
+           <input class="botoncancelar" type="reset" name="cancelar"></input><br>
+            <br>
+
+          </h3>
+          </font>   
+        </form>
+        </td>
+        </tr>
+        </table>
+      
+
+        <div class="Botonvuelta">
+          <a href="index.html">
+             <button class="Botonpaginaprincipal">
+              <span><font face="Arial, Verdana" size="2"><b>PAGINA PRINCIPAL</b></font> </span>
+          </a>
+        </div>
+
+        </section>
+      </div>  
+        
+       
+  </main>  
+</body>
+</html>
+
+
+

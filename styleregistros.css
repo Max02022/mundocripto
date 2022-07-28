@@ -1,0 +1,97 @@
+*{margin:0;
+padding:0}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 1em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+body{
+    background-image: url(cadenabloque.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.Tablaregistro{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color:rgb(92, 91, 89) ;
+    opacity: 0.8;
+}
+
+.Encabezado{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.8;
+    color:silver;
+}
+
+.Botonpaginaprincipal{
+    display: flex;
+    width: 140px;
+    height: 50px;
+    background-color: rgb(117, 113, 113);
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5 ease all;
+    border-radius: 5px;
+    position:relative;
+    overflow: hidden;
+}
+
+.Botonpaginaprincipal::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:rgb(179, 153, 5);
+    position:absolute;
+    z-index: 1;
+    top: -88px;
+    left:0;
+    transition: 0.5s;
+}
+
+.Botonpaginaprincipal span {
+    position: relative;
+    z-index: 2;
+    transition: 00.5s ease all;
+}
+
+.Botonpaginaprincipal:hover::after{
+    top:0;
+}
+
+.Botonvuelta{
+    display:flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;    
+}
+
+.botonenviar{
+    background-color:rgb(117, 113, 113);
+    width: 100px;
+    height: 40px;
+}  
+
+.botonenviar:hover {background-color:rgb(179, 153, 5) ;}
+
+.botoncancelar{
+    background-color: rgb(117, 113, 113);
+    width: 100px;
+    height: 40px;
+}
+
+.botoncancelar:hover {background-color:rgb(179, 153, 5) ;}

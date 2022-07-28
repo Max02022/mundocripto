@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecalculadora.css">
+    <script type="text/javascript">
+        function rendimiento(){
+            var numactual=document.getElementById("numactual").value;
+            var numesperado=document.getElementById("numesperado").value;
+            var rendimiento = ((parseFloat(numesperado)/ parseFloat(numactual))-1)*100;
+            alert("El rendimiento esperado es del: "+rendimiento+" %");
+        }
+    </script>
+
+    <title>CALCULADORA</title>
+</head>
+
+<header>
+  <div class="Encabezado">
+   <h1 align="center" style="color:rgb(161, 161, 158)"> <font face="Arial, Verdana" size="6"><b>CALCULADORA PERSONAL</b></h1><br>
+  </div>
+</header>
+
+<body>
+  <main>
+    <div class="Tablaregistro">
+
+        <section id="registro">
+        
+           
+            <table align="center" border="1">
+              <caption><h2 style="color:rgb(179, 153, 5)"> <font face="Arial, Verdana" size="5"><b>REALIZA TUS ESTIMACIONES</b></h2><br></caption>
+
+                <tr>
+                    <td>
+                        <form align="center"><br><h3><font face="Arial, Verdana" size="3">
+
+                        
+
+                            VALVOR CRIPTO ACTUAL:<input type="number" id="numactual" autofocus placeholder="Ingresar precio actual"><br><br>
+                            
+
+                            VALOR ESPERADO: <input type="number" id="numesperado" autofocus placeholder="Ingresar precio esperado"><br><br>            
+            
+            
+                            <input class="botonrendimiento" type="button" id="boton" value="calcular" onclick="rendimiento()">    
+                            
+                                                 
+                
+
+                            </h3>
+                            </font>   
+                        </form>
+                    </td>
+                </tr>
+            </table>
+      
+
+            <div class="Botonvuelta">
+                <a href="index.html">
+                    <button class="Botonpaginaprincipal">
+                    <span><font face="Arial, Verdana" size="2"><b>PAGINA PRINCIPAL</b></font> </span>
+                </a>
+            </div>
+
+        </section>
+      </div>  
+        
+       
+  </main>  
+</body>
+
+</html>
